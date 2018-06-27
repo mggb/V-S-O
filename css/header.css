@@ -38,6 +38,8 @@
   }
   .desktopMenu{
     padding-top:8px;
+    position:relative;
+    z-index:55555;
   }
   .containerDesktopMenu {
     margin-top: 40px;
@@ -133,6 +135,8 @@
   color: rgb(79, 147, 245);
   font-size: 28px;
   padding-left: 25px;
+  position:relative;
+  z-index:9999;
 }
 
 .fa-bars {

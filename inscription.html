@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/inscription.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +14,79 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="container-header">
+    <div class="row between-md between-lg containerDesktopMenu">
+      <div class="col-md-1 col-lg-1 containerDesktop-title">
+        <span class="desktopTitle">VSO</span>
+      </div>
+
+      <nav class="col-md-9 col-lg-9 containerDesktop-menu">
+        <ul class="desktopMenu">
+          <li>
+            <ul class="wrapper-desktopMenu">
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="#">Acceuil</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Catalogue</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
+                <ul class="sousMenu">
+                  <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir colons</a></li>
+                  <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir technicien</a></li>
+                  <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Demander un visa</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="col-md-2 col-lg-2 containerDesktop-icons">
+        <i class="fas fa-plus-circle"></i>
+      </div>
+
+    </div>
 
 
+    <div class="row center-xs center-lg container-menuMobile">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-title">
+        <span class="header-title-mobile">VSO</span>
+      </div>
+
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-icons">
+        <div class="burger-menu">
+          <span class="burger-menu-lineone"></span>
+          <span class="burger-menu-linetwo"></span>
+        </div>
+        <i class="fas fa-plus-circle"></i>
+      </div>
+
+
+      <div class="menu-open">
+        <div class="container">
+          <div class="row between-xs container-header-open">
+            <div class="col-xs-7 col-xs-offset-5 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 col-lg-7 col-lg-offset-5">
+              <h2 class="title-header-open">V S O</h2>
+
+              <div class="div-header-open">
+                <img src="image/glass.png" alt="glass">
+                <img class="take" src="image/take.png" alt="take">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerList">
+          <ul class="containerli">
+            <li class="li-menu"> <a class="link-menu" href="#">Acceuil</a></li>
+            <li class="li-menu"> <a class="link-menu" href="">Catalogue</a></li>
+            <li class="li-menu"> <a class="link-menu" href="">Devenir colons</a></li>
+            <li class="li-menu"> <a class="link-menu" href="">Devenir technicien</a></li>
+            <li class="li-menu"> <a class="link-menu" href="">Recherche avancée</a></li>
+            <li class="li-menu"> <a class="link-menu" href="">Demander un visa</a></li>
+          </ul>
+          <button class="conect-and-deconect" type="button" name="button">DECONNEXION</button>
+        </div>
+      </div>
+    </div>
   </header>
 
 
