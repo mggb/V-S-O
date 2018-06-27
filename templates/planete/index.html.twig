@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Planete index{% endblock %}
+
+{% block body %}
+    <h1>Planete index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Habitat</th>
+                <th>Population</th>
+                <th>Gravite</th>
+                <th>Luminosite</th>
+                <th>Duree</th>
+                <th>Temperature</th>
+                <th>Climat</th>
+                <th>Techno</th>
+                <th>Environnement</th>
+                <th>Histoire</th>
+                <th>Image</th>
+                <th>Matricul</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for planete in planetes %}
+            <tr>
+                <td>{{ planete.id }}</td>
+                <td>{{ planete.nom }}</td>
+                <td>{{ planete.habitat }}</td>
+                <td>{{ planete.population }}</td>
+                <td>{{ planete.gravite }}</td>
+                <td>{{ planete.luminosite }}</td>
+                <td>{{ planete.duree }}</td>
+                <td>{{ planete.temperature }}</td>
+                <td>{{ planete.climat }}</td>
+                <td>{{ planete.techno }}</td>
+                <td>{{ planete.environnement }}</td>
+                <td>{{ planete.histoire }}</td>
+                <td>{{ planete.image }}</td>
+                <td>{{ planete.matricul }}</td>
+                <td>
+                    <a href="{{ path('planete_show', {'id': planete.id}) }}">show</a>
+                    <a href="{{ path('planete_edit', {'id': planete.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="15">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('planete_new') }}">Create new</a>
+{% endblock %}
