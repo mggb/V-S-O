@@ -2,29 +2,34 @@
   margin-left: 25px;
   margin-right: 25px;
 }
-.burger-menu{
-  display:flex;
-  height:30px;
-  width:30px;
-  align-items:flex-end;
-  justify-content:center;
-  flex-direction:column;
+
+.burger-menu {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
 }
-.burger-menu-lineone,.burger-menu-linetwo{
-  display:block;
-  background:white;
-  height:2px;
-  border-radius:2px;
+
+.burger-menu-lineone, .burger-menu-linetwo {
+  display: block;
+  background: white;
+  height: 2px;
+  border-radius: 2px;
 }
-.burger-menu-lineone{
-  width:100%;
+
+.burger-menu-lineone {
+  width: 100%;
 }
-.burger-menu-linetwo{
-  margin-top:6px;
-  width:60%;
-  float:right;
-  clear:both;
+
+.burger-menu-linetwo {
+  margin-top: 6px;
+  width: 60%;
+  float: right;
+  clear: both;
 }
+
 /* Menu desktop */
 
 @media (min-width: 992px) {
@@ -36,27 +41,26 @@
     width: 70%;
     margin: 0 auto;
   }
-  .desktopMenu{
-    padding-top:8px;
-    position:relative;
-    z-index:55555;
+  .desktopMenu {
+    padding-top: 8px;
+    position: relative;
+    z-index: 55555;
   }
   .containerDesktopMenu {
     margin-top: 40px;
   }
   .sousMenu {
     display: none;
-    z-index:1000;
+    z-index: 1000;
     position: absolute;
     padding-top: 16px;
   }
   .sousMenu-desktopItems {
     width: 150px;
     padding-bottom: 18px;
-    font-family: 'Montserrat-Light';
+    font-family: 'Montserrat Light';
     font-size: 16px;
     color: white;
-
   }
   .menu-desktopItems:last-child:hover .sousMenu {
     display: block;
@@ -82,7 +86,7 @@
     justify-content: flex-end;
   }
   .menu-desktopLink {
-    font-family: 'Montserrat Regular';
+    font-family: 'Montserrat Light';
     font-size: 16px;
     color: white;
   }
@@ -90,8 +94,8 @@
     font-family: 'Montserrat Regular';
     font-size: 32px;
     color: white;
-    letter-spacing:20px;
-    display:inline-block
+    letter-spacing: 20px;
+    display: inline-block
   }
 }
 
@@ -111,32 +115,33 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items:center;
+  align-items: center;
 }
 
 .container-title {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-top:4px;
+  padding-top: 4px;
 }
 
 .header-title-mobile {
   font-size: 26px;
   font-family: 'Montserrat Regular';
   color: white;
-  letter-spacing:8px;
+  letter-spacing: 8px;
 }
 
-.fa-bars{
-  color: rgb(255,255,255);
+.fa-bars {
+  color: rgb(255, 255, 255);
 }
+
 .fa-plus-circle {
   color: rgb(79, 147, 245);
   font-size: 28px;
   padding-left: 25px;
-  position:relative;
-  z-index:9999;
+  position: relative;
+  z-index: 9999;
 }
 
 .fa-bars {

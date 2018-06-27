@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('css/font/Montserrat-Regular.ttf');
-  src: url('css/font/Montserrat-Light.ttf');
-}
-
 /* LES MARGES */
 
 .bg, .color-filter {
@@ -38,7 +32,7 @@
 
 @media (min-width: 769px) {
   .fond {
-    margin-top: 120px;
+    margin-top: 50px;
   }
 }
 
@@ -49,7 +43,7 @@
   justify-content: flex-start;
   width: 50%;
   font-size: 16px;
-  font-family: 'Montserrat-Light';
+  font-family: 'Montserrat Light';
 }
 
 .form-sexe {
@@ -59,11 +53,11 @@
   padding-bottom: 30px;
   padding-top: 50px;
   font-size: 16px;
-  font-family: 'Montserrat-Light'
+  font-family: 'Montserrat Light'
 }
 
 .form-label {
-  font-size: 12px;
+  font-size: 16px;
   margin: 0;
   display: block;
   opacity: 1;
@@ -79,6 +73,9 @@
   border-style: none none solid none;
   box-shadow: none;
   margin-left: 85px;
+  width: 30px;
+  height: 20px;
+  max-width: 100%;
 }
 
 .inputContainer {
@@ -94,10 +91,10 @@
   outline-width: 0;
   width: 100%;
   background: transparent;
-  height: 20px;
+  height: 25px;
   font-size: 15px;
-  font-family: 'Montserrat-Regular';
-  color: rgb(74, 74, 74);
+  font-family: 'Montserrat Regular';
+  color: black;
 }
 
 .btn-start-order {
@@ -112,7 +109,7 @@
   width: 200px;
   height: 35px;
   transition: all 0.25s ease 0s;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat Regular';
   font-size: 16px;
 }
 
@@ -122,13 +119,53 @@
   }
 }
 
+.form-control::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.form-control::-moz-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.form-control:-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.form-control::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
 .btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
   color: #5e9bfc;
 }
 
 /* Ipad */
 
-@media (min-width: 769px) and (max-width: 1023px) {}
+@media (min-width: 989px) {
+  .form-control::-webkit-input-placeholder {
+    color: black;
+    font-size: 18px;
+  }
+  .form-control::-moz-placeholder {
+    color: black;
+    font-size: 18px;
+  }
+  .form-control:-ms-input-placeholder {
+    color: black;
+    font-size: 18px;
+  }
+  .form-control::placeholder {
+    color: black;
+    font-size: 18px;
+  }
+  .form-titleSexe {
+    font-size: 18px;
+  }
+}
 
 /* Small tablet */
 
