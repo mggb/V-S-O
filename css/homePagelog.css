@@ -1,0 +1,145 @@
+/*section {
+  z-index: 1;
+  background-image: url("../image/mondeDesertique/testSize.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  background-position: center center;
+}
+*/
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('css/font/Montserrat-Regular.ttf');
+  src: url('css/font/Montserrat-Light.ttf');
+  src: url('css/font/Montserrat-Medium.ttf');
+}
+
+.container-profile {
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  z-index: -1;
+}
+
+.box-rubrics {
+  margin-top: 10px;
+}
+
+.image {
+  z-index: 3;
+  height: 110px;
+  width: 110px;
+  position: relative;
+  top: 28%;
+}
+
+.image2 {
+  width: 100%;
+}
+
+.image1 {
+  height: 250px;
+  width: 100%;
+}
+
+@media (min-width: 990px) {
+  .image1 {
+    width: 100%;
+    height: 160%;
+  }
+  .image2 {
+    width: 100%;
+    height: 60%;
+  }
+  .container-profile {
+    margin: 0 auto;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .container-specific {
+    display: block;
+  }
+  .box-rubrics {
+    margin-top: 30px;
+  }
+}
+
+.box-image {
+  z-index: 4;
+}
+
+.title {
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+}
+
+.box-title {
+  height: 50px;
+  width: 100%;
+  background: white;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  padding-top: 30px;
+}
+
+.box-info {
+  z-index: 2;
+  padding: 10px;
+  width: 300px;
+  height: 80px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .container-specific {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-specific {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 989px) {
+  .container-specific {
+    display: none;
+  }
+  .box-rubrics {
+    margin-top: 30px;
+  }
+}
+
+/* Ipad */
+
+/* Small tablet */
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Phones */
+
+@media (max-width: 480px) {}

@@ -1,0 +1,78 @@
+@font-face {}
+
+/* LES MARGES */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-titleSexe {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.form-sexe {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.form-label {
+  font-size: 12px;
+  margin: 0;
+  display: block;
+  opacity: 1;
+}
+
+.form-controlSexe {
+  border-radius: 0;
+  border-color: #ccc;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  box-shadow: none;
+  margin-left: 85px;
+}
+
+.inputContainer {
+  padding-bottom: 40px;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: #ccc;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  box-shadow: none;
+  outline-width: 0;
+  width: 100%;
+}
+
+.btn-start-order {
+  background: #4888FF;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin: 50px;
+  width: 200px;
+  height: 35px;
+  transition: all 0.25s ease 0s;
+}
+
+.btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
+  color: #5e9bfc;
+}
+
+/* Ipad */
+
+@media (min-width: 769px) and (max-width: 1023px) {}
+
+/* Small tablet */
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Phones */
+
+@media (max-width: 480px) {}
