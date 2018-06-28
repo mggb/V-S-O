@@ -3,36 +3,53 @@
 
 <head>
     <meta charset="utf-8">
+
     <link rel="stylesheet" href="{{ asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/font.css') }}" type="text/css" >
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/header.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/login.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/header.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/accueil.css') }}" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSO</title>
+    <title>{{ title }}</title>
 </head>
 
 <body>
-<!-- navbar -->
+<!-- test -->
 <header class="container-header">
     <div class="row between-md between-lg containerDesktopMenu">
         <div class="col-md-1 col-lg-1 containerDesktop-title">
             <span class="desktopTitle">VSO</span>
         </div>
-
+        <nav class="col-md-9 col-lg-9 containerDesktop-menu">
+            <ul class="desktopMenu">
+                <li>
+                    <ul class="wrapper-desktopMenu">
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="#">Acceuil</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Catalogue</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
+                            <ul class="sousMenu">
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir colons</a></li>
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir technicien</a></li>
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Demander un visa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <div class="col-md-2 col-lg-2 containerDesktop-icons">
-            <i class="fas fa-plus-circle"></i>
+            {% if is_granted('ROLE_USER') %}
+
+            {% else %}
+            <a href="{{ path('login') }}"><i class="fas fa-plus-circle"></i></a>
+            {% endif %}
         </div>
-
     </div>
-
-
     <div class="row center-xs center-lg container-menuMobile">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-title">
             <span class="header-title-mobile">VSO</span>
         </div>
-
 
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-icons">
             <div class="burger-menu">
@@ -42,7 +59,6 @@
             <i class="fas fa-plus-circle"></i>
         </div>
 
-
         <div class="menu-open">
             <div class="container">
                 <div class="row between-xs container-header-open">
@@ -50,8 +66,8 @@
                         <h2 class="title-header-open">V S O</h2>
 
                         <div class="div-header-open">
-                            <img src="image/glass.png" alt="glass">
-                            <img class="take" src="{{ asset('bundles/build/img/take.jpg') }}" alt="take">
+                            <img src="{{ asset('bundles/build/img/glass.png') }}" alt="glass">
+                            <img class="take" src="{{ asset('bundles/build/img/take.png') }}" alt="take">
                         </div>
                     </div>
                 </div>
@@ -70,33 +86,17 @@
         </div>
     </div>
 </header>
-<!-- navbar end -->
-<img class="login-bg" src="{{ asset('bundles/build/img/astronaute.jpg') }}" alt="background">
-<div class="bodyLogin">
-    <section class="container-section">
-        <div class="container-titleForm">
-            <div class="row center-xs ">
-                <h2 class="col-xs-10 col-sm-10 col-md-10 col-lg-10 title-login">Migration spacial</h2>
-            </div>
-            <form class=" row center-xs container-form" action="{{ path('login') }}" method="post" role="form">
-                <div class="col-xs-10 col-sm-11 col-md-8 col-lg-8 login-inputContainer">
-                    <input type="email" class="login-input login-imatricule" id="username" name="_username" placeholder="Email">
-                    <input type="password" class="login-input login-password " id="password" name="_password" placeholder="Mot de passe">
-
-                    <input type="hidden" name="_target_path" value="{{ app.request.get('redirect_to') }}"/>
-                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
-
-                    <div class="row between-xs containerLink">
-                        <a class="col-xs-8 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1 link-mdpo" href="#">Mot de passe oublié ?</a>
-                        <a class="col-xs-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1  link-register" href="{{ path('user_registration') }}">S'inscrire</a>
-                    </div>
-                    <div class=" ">
-                        <button class="connexion" type="submit" name="button">CONNEXION</button>
-                    </div>
-                </div>
-            </form>
+<section class="container-content">
+    <div class="row center-xs center-lg">
+        <div class="col-xs-10 col-sm-8 col-md-7 col-lg-7 container-elements">
+            <p class="main-title">Vous souhaitez changer de vie ?</p>
+            <p class="main-subTitle">Changer de monde.</p>
+            <p class="main-description">VSO vous accompagne et vous conseille pour toutes vos démarches, n'attendez plus, lancez vous!</p>
+            <a class="btn btn-start-order" href="{{ path('Oui_accueil') }}">DÉCOUVRIR</a>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+<footer class="footer"></footer>
 </body>
+<script src="js/script.js"></script>
 </html>

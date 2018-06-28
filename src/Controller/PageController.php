@@ -10,7 +10,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class PageController extends Controller
 {
     /**
-     * @Route("/", name="index", methods="GET")
+     * @Route("/connexion", name="index", methods="GET")
      */
     public function index()
     {

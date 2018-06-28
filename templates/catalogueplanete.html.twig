@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/font.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/simpleHeader.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/detailplanete.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSO</title>
+</head>
+
+<body>
+<!-- header -->
+<header class="simpleHeader">
+    <div class="container-simpleHeader">
+        <div class="row end-xs end-sm end-md end-lg box">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
+                <div class="logo">VSO</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
+                <div class="close-icon"><i class="fas fa-bars burger-menu"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-header-cover none">
+        <div class="menu-header-container">
+            <nav class="classmenu-header-container-nav">
+                <ul class="menu-header-container-nav-flex">
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Accueil</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Catalogue</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Devenir colons</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Devenir techniciens</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Recherche avancées</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Demander un visa</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-header-container-btn">
+                <a href="" class="menu-header-container-dc">deconnexion</a>
+            </div>
+        </div>
+    </div>
+</header>
+<span class="detailplanete-cover"></span>
+<img src="{{ asset('bundles/build/img/image52.jpg') }}" class="detailplanete-bg">
+
+<div class="detailplanete-container">
+    {% for planete in planetes %}
+    <div class="row center-xs">
+        <div class="col-xs-10 col-md-11 col-lg-11">
+            <h1 class='detailplanete-container-title'>{{ planete.nom }}</h1>
+            <div class="row center-xs detailplanete-container-content">
+                <div class="col-xs-1 detailplanete-container-content-arrow">
+                    <a href="#"><img src="{{ asset('bundles/build/img/fleche-gauche.png') }}" alt="previous"></a>
+                </div>
+                <div class="col-xs-1 detailplanete-container-content-arrow">
+                    <a href="#"><img src="{{ asset('bundles/build/img/fleche-droite.png') }}" alt="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2><a class="catalogueplanete-container-content-link" href="{{ path('post_planete', {id: planete.id}) }}">{{ planete.nom }}</a></h2>
+    {% endfor %}
+</div>
+
+<footer class="footer"></footer>
+</body>
+<script src="js/burger.js"></script>
+
+
+</html>

@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/planete")
+ * @Route("/easy_admin")
  */
 class PlaneteController extends Controller
 {
