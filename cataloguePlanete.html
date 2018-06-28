@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/reset.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/font.css" type="text/css" >
   <link rel="stylesheet" href="css/simpleHeader.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="css/detailplanete.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/catalogueplanete.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -17,13 +17,45 @@
 <body>
   <!-- header -->
   <header class="simpleHeader">
-    <div class="container-simpleHeader">
+    <div class="row between-md between-lg containerDesktopMenu">
+      <div class="col-md-1 col-lg-1 containerDesktop-title">
+        <span class="desktopTitle">VSO</span>
+      </div>
+
+      <nav class="col-md-9 col-lg-9 containerDesktop-menu">
+        <ul class="desktopMenu">
+          <li>
+            <ul class="wrapper-desktopMenu">
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="#">Acceuil</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">catalogueplanete</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
+                <ul class="sousMenu">
+                  <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir colons</a></li>
+                  <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir technicien</a></li>
+                  <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Demander un visa</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="col-md-2 col-lg-2 containerDesktop-icons">
+        <i class="fas fa-plus-circle" title="login"></i>
+      </div>
+    </div>
+
+    <div class="container-simpleHeader container-menuMobile">
       <div class="row end-xs end-sm end-md end-lg box">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
           <div class="logo">VSO</div>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
-          <div class="close-icon"><i class="fas fa-bars burger-menu"></i></div>
+          <div class="close-icon">
+            <i class="fas fa-bars burger-menu"></i>
+            <i class="fas fa-plus-circle"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -35,7 +67,7 @@
                 <a class="menu-header-container-nav-flex-link"href="">Accueil</a>
               </li>
               <li class="menu-header-container-nav-flex-item">
-                <a class="menu-header-container-nav-flex-link"href="">Catalogue</a>
+                <a class="menu-header-container-nav-flex-link"href="">catalogueplanete</a>
               </li>
               <li class="menu-header-container-nav-flex-item">
                 <a class="menu-header-container-nav-flex-link"href="">Devenir colons</a>
@@ -57,22 +89,22 @@
       </div>
     </div>
   </header>
-    <span class="detailplanete-cover"></span>
-    <img src="image/mondeVegetal/image52.jpg" class="detailplanete-bg">
+    <span class="catalogueplanete-cover"></span>
+    <img src="image/mondeVegetal/image52.jpg" class="catalogueplanete-bg">
 
-  <div class="detailplanete-container">
+  <div class="catalogueplanete-container">
     <div class="row center-xs">
       <div class="col-xs-10 col-md-11 col-lg-11">
-        <h1 class='detailplanete-container-title'>ceres</h1>
-        <div class="row center-xs detailplanete-container-content">
-          <div class="col-xs-1 detailplanete-container-content-arrow">
+        <h1 class='catalogueplanete-container-title'>ceres</h1>
+        <div class="row center-xs catalogueplanete-container-content">
+          <div class="col-xs-1 catalogueplanete-container-content-arrow">
             <a href="#"><img src="image/fleche-gauche-bold.png" alt="previous"></a>
           </div>
-          <div class="col-xs-9 detailplanete-container-content-text">
+          <div class="col-xs-9 catalogueplanete-container-content-text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur voluptate rerum. Veniam facere odio asperiores officiis, nostrum ad beatae, esse eligendi earum odit dolor voluptates perspiciatis, praesentium incidunt. Quo.lorem</p>
 
           </div>
-          <div class="col-xs-1 detailplanete-container-content-arrow">
+          <div class="col-xs-1 catalogueplanete-container-content-arrow">
             <a href="#"><img src="image/fleche-droite-bold.png" alt="next"></a>
           </div>
 

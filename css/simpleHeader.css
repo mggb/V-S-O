@@ -1,7 +1,5 @@
 /*thomas ajout simplheader pour btn menu*/
-.simpleHeader{
-  width:100%;
-}
+
 
 .container-simpleHeader {
   max-width: 100%;
@@ -33,29 +31,57 @@
 .paddingL {
   padding-left: 0px;
 }
-
-.fa-times,.fa-bars {
+.close-icon{
+  display:flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+.fa-times,.fa-bars,{
   color: white;
   font-size: 22px;
 }
-
+.fa-plus-circle{
+  color:rgb(79, 147, 245);
+  font-size:22px;
+  margin-left:24px;
+  position:relative;
+  cursor:pointer;
+}
+.fa-plus-circle::after{
+  content:'';
+  top:50%;
+  width:15px;
+  height:15px;
+  z-index:-1;
+  top:5px;
+  left:5px;
+  position:absolute;
+  border-radius:50%;
+  background: white;
+}
+.fa-times,.fa-bars {
+  color: white;
+  font-size: 18px;
+}
+.logo {
+  font-size: 32px;
+  color: white;
+  font-family: 'Montserrat Regular';
+  letter-spacing: 20px;
+  margin-right: -85px;
+}
 @media (min-width: 769px) {
   .container-simpleHeader {
     max-width: 100%;
     margin-left: 70px;
     margin-right: 70px;
   }
-  .fa-times,.fa-bars {
-    color: white;
-    font-size: 28px;
+  .fa-plus-circle::after{
+    content:'';
+    top:5px;
+    left:30px;
   }
-  .logo {
-    font-size: 32px;
-    color: white;
-    font-family: 'Montserrat Regular';
-    letter-spacing: 20px;
-    margin-right: -85px;
-  }
+
 }
 /* menu-header*/
 .menu-header-cover{
@@ -72,7 +98,7 @@
 .menu-header-container{
   position:relative;
   top:50px;
-  width:95%;
+  width:75%;
   max-width:768px;
   border-radius:8px;
   min-height:85vh;
@@ -120,4 +146,117 @@
 }
 .none{
   display:none;
+}
+/* desktop */
+
+.containerDesktopMenu{
+  display:none !important;
+}
+
+@media (min-width: 992px) {
+  .simpleHeader{
+    width:90%;
+    margin:0 auto;
+  }
+  .fa-plus-circle{
+    font-size:26px;
+  }
+  .fa-plus-circle::after{
+    content:'';
+    top:5px;
+    left:5px;
+    width:18px;
+    height:18px;
+  }
+  .menu-header-cover{
+    display:none;
+  }
+  .containerDesktopMenu{
+    display:flex !important;
+
+  }
+
+  .container-menuMobile{
+    display:none !important;
+  }
+
+  .wrapper-desktopMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .desktopMenu {
+    padding-top: 8px;
+    position: relative;
+    z-index: 55555;
+  }
+  .containerDesktopMenu {
+    margin-top: 40px;
+  }
+  .sousMenu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding-top: 16px;
+  }
+  .sousMenu-desktopItems {
+    width: 150px;
+    padding-bottom: 18px;
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    color: white;
+  }
+  .menu-desktopItems:last-child:hover .sousMenu {
+    display: block;
+  }
+  .sousMenu-desktopLink {
+    color: white;
+  }
+  .test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .containerDesktop-title {
+    display: flex;
+    justify-content: center;
+  }
+  .container-header {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .containerDesktop-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu-desktopLink {
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    color: white;
+  }
+  .desktopTitle {
+    font-family: 'Montserrat Regular';
+    font-size: 32px;
+    color: white;
+    letter-spacing: 20px;
+    display: inline-block
+  }
+}
+@media (min-width:769px) and (max-width:991px) {
+  .fa-plus-circle {
+    padding-left: 28px;
+  }
+  .fa-search {
+    padding-right: 28px;
+  }
+  .container-header {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .containerList {
+    align-items: center;
+  }
 }
