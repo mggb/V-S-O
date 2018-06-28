@@ -1,4 +1,3 @@
-p {}
 
 .condition-cover {
   position: fixed;
@@ -25,12 +24,11 @@ p {}
 
 .condition-container {
   position: absolute;
-  overflow: scroll;
-  bottom: 0;
-  height: 50vh;
-  width: 100%;
+  top:50vh;
+  max-width: 100%;
   background: white;
   padding-bottom: 16px;
+  overflow:hidden;
 }
 
 .condition-container-title {
