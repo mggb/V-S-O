@@ -31,7 +31,7 @@
   margin: -19px 0 0 24%;
 }
 .textQuestion{
-  margin-top: 5px;
+  margin-top: 15px;
   font-size: 20px;
   text-align: center;
 }
@@ -86,4 +86,17 @@
 }
 .textFind{
   text-align: center;
+}
+.text-in-finishPlanette{
+  text-align: center;
+  font-size: 23px;
+}
+.button-center{
+
+margin: 25px auto;
+
+display: block;
+
+width: 201px;
+height: 45px;
 }
