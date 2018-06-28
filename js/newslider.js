@@ -69,22 +69,24 @@ start.addEventListener('click', function() {
   var u = 2;
   var o = 1;
   var stock = [];
+  var containerARROw = document.querySelector('.containerArrow')
   var contain = document.querySelector('.containerQuestionAndAnswer2');
   function find() {
+
     if (stock.length === 7 ) {
-      console.log('yolo');
       numberquestion.innerHTML = '';
       numberquestion.innerHTML += `
     <p class="textQuestion">voila votre planette</p>
     `
     contain.innerHTML = '';
     contain.innerHTML += `
-    <div class="col-xs-10 col-md-11 col-lg-11">
+    <div class="col-xs-12 col-md-11 col-lg-11">
       <h1 class="detailplanete-container-title pricinpal">felicitation</h1>
-      <p>Venez vite decouvrir la planette qui vous corespond, Ne perdez plus de temps <br> changer de vie</p>
-      <button  class="start"type="button" name="button">voir la fiche</button>
+      <p class="textFind">Venez vite decouvrir la planette qui vous corespond, Ne perdez plus de temps <br> changer de vie</p>
+      <button  class="finishBUtuttonFind"type="button" name="button">voir la fiche</button>
     </div>
   `;
+  containerARROw.style.display ='none;'
     }
   }
 

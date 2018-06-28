@@ -10,6 +10,7 @@
 .secondary{
   text-align: center;
   font-size: 18px;
+  font-family: 'Montserrat Medium';
 }
 
 
@@ -31,20 +32,22 @@
   margin: -19px 0 0 24%;
 }
 .textQuestion{
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 10px;
+    font-size: 15px;
+  font-family: 'Montserrat Medium';
   text-align: center;
 }
 .containerQuestionAndAnswer{
   height: 55vh;
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 8vh;
 }
 .containerQuestion{
   margin: 8vh 0 0 30px;
 }
 .Question{
-  font-size: 24px;
+  font-size: 16px;
+    font-family: 'Montserrat SemiBold';
 }
 .ContainerAnswer{
   display: flex;
@@ -58,11 +61,12 @@
   margin-left: 45px;
 }
 .checkboxChoice{
-  width: 34px;
-    height: 25px;
+  width: 15px;
+    height: 15px;
 }
 .textNextCheckbox{
-  font-size: 28px;
+  font-size: 14px;
+  font-family: 'Montserrat Regular';
 }
 .containerArrow{
   height: 6vh;
@@ -85,18 +89,26 @@
   width: 20px;
 }
 .textFind{
-  text-align: center;
+
+  margin-top: 54px;
+text-align: center;
+font-family:"Montserrat Medium";
 }
 .text-in-finishPlanette{
-  text-align: center;
-  font-size: 23px;
+
+  font-size: 15px;
+  font-family:"Montserrat Medium";
+  line-height: 22px;
 }
 .button-center{
 
 margin: 25px auto;
-
 display: block;
-
 width: 201px;
 height: 45px;
+border-radius: 14px;
+background: rgb(79 148 245);
+}
+.taille-marge{
+  margin: 0 16px;
 }
