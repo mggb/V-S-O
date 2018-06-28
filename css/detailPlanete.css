@@ -1,0 +1,86 @@
+.detailplanete-cover{
+  position:fixed;
+  height:100vh;
+  width:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:  rgb(74,74,74,0.4);
+  z-index:-9998;
+}
+.detailplanete-bg{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  min-width:100vw;
+  min-height:100vh;
+  z-index:-9999;
+}
+.detailplanete-bold{
+  font-family:"Montserrat Medium";
+}
+.detailplanete-regular{
+  font-family:"Montserrat Regular";
+}
+.detailplanete-container{
+  position:absolute;
+  overflow:hidden;
+  top:50vh;
+  width:100%;
+  background:white;
+  padding-bottom:16px;
+}
+.detailplanete-container-title{
+  font-family:'Montserrat SemiBold';
+  font-size:20pt;
+  color:#4a4a4a;
+  margin:24px 0 6px 0;
+  text-transform:uppercase;
+}
+@media (min-width: 768px) {
+  .detailplanete-container-title{
+    margin:34px 0 6px 0;
+  }
+}
+.detailplanete-container-caracter{
+  padding-top:16px;
+}
+@media (min-width: 768px) {
+  .detailplanete-container-caracter{
+    padding-top:26px;
+  }
+}
+.detailplanete-container-subtitle{
+  margin-top:24px;
+  font-family:'Montserrat SemiBold';
+  font-size:20pt;
+  color:#4a4a4a;
+  text-transform:uppercase;
+}
+@media (min-width: 768px) {
+  .detailplanete-container-subtitle{
+    margin-top:32px;
+  }
+}
+.detailplanete-container-subtitle-text{
+  margin-top:18px;
+  font-family:'Montserrat Regular';
+  font-size:16px;
+  line-height:30px;
+}
+.detailplanete-container-subtitle-visa{
+  display:inline-block;
+  text-align:center;
+  width:auto;
+  padding:10px 20px;
+  background:#4888FF;
+  color:white;
+  font-family:'Montserrat Regular';
+  border-radius:4px;
+  margin:24px 0;
+  text-transform:uppercase;
+  letter-spacing:0.9px;
+}
