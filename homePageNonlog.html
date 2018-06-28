@@ -8,21 +8,19 @@
   <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="css/reset.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/header.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/simpleHeader.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/homePageNonlog.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VSO</title>
 </head>
 
 <body>
-  <header class="container-header">
+  <header class="simpleHeader">
     <div class="row between-md between-lg containerDesktopMenu">
       <div class="col-md-1 col-lg-1 containerDesktop-title">
         <span class="desktopTitle">VSO</span>
       </div>
-
       <nav class="col-md-9 col-lg-9 containerDesktop-menu">
         <ul class="desktopMenu">
           <li>
@@ -41,63 +39,55 @@
           </li>
         </ul>
       </nav>
-
       <div class="col-md-2 col-lg-2 containerDesktop-icons">
-        <i class="fas fa-plus-circle"></i>
+        <i class="fas fa-plus-circle" title="login"></i>
       </div>
-
     </div>
-
-
-    <div class="row center-xs center-lg container-menuMobile">
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-title">
-        <span class="header-title-mobile">VSO</span>
-      </div>
-
-
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-icons">
-        <div class="burger-menu">
-          <span class="burger-menu-lineone"></span>
-          <span class="burger-menu-linetwo"></span>
+    <div class="container-simpleHeader container-menuMobile">
+      <div class="row end-xs end-sm end-md end-lg box">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
+          <div class="logo">VSO</div>
         </div>
-        <i class="fas fa-plus-circle"></i>
-      </div>
-
-
-      <div class="menu-open">
-        <div class="container">
-          <div class="row between-xs container-header-open">
-            <div class="col-xs-7 col-xs-offset-5 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 col-lg-7 col-lg-offset-5">
-              <h2 class="title-header-open">V S O</h2>
-
-              <div class="div-header-open">
-                <img src="image/glass.png" alt="glass">
-                <img class="take" src="image/take.png" alt="take">
-              </div>
-            </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
+          <div class="close-icon">
+            <i class="fas fa-bars burger-menu"></i>
+            <i class="fas fa-plus-circle"></i>
           </div>
         </div>
-        <div class="containerList">
-          <ul class="containerli">
-            <li class="li-menu"> <a class="link-menu" href="#">Acceuil</a></li>
-            <li class="li-menu"> <a class="link-menu" href="">Catalogue</a></li>
-            <li class="li-menu"> <a class="link-menu" href="">Devenir colons</a></li>
-            <li class="li-menu"> <a class="link-menu" href="">Devenir technicien</a></li>
-            <li class="li-menu"> <a class="link-menu" href="">Recherche avancée</a></li>
-            <li class="li-menu"> <a class="link-menu" href="">Demander un visa</a></li>
-          </ul>
-          <button class="conect-and-deconect" type="button" name="button">DECONNEXION</button>
-        </div>
+      </div>
+    </div>
+    <div class="menu-header-cover none">
+      <div class="menu-header-container">
+          <nav class="classmenu-header-container-nav">
+            <ul class="menu-header-container-nav-flex">
+              <li class="menu-header-container-nav-flex-item">
+                <a class="menu-header-container-nav-flex-link"href="">Accueil</a>
+              </li>
+              <li class="menu-header-container-nav-flex-item">
+                <a class="menu-header-container-nav-flex-link"href="">Catalogue</a>
+              </li>
+              <li class="menu-header-container-nav-flex-item">
+                <a class="menu-header-container-nav-flex-link"href="">Devenir colons</a>
+              </li>
+              <li class="menu-header-container-nav-flex-item">
+                <a class="menu-header-container-nav-flex-link"href="">Devenir techniciens</a>
+              </li>
+              <li class="menu-header-container-nav-flex-item">
+                <a class="menu-header-container-nav-flex-link"href="">Recherche avancées</a>
+              </li>
+              <li class="menu-header-container-nav-flex-item">
+                <a class="menu-header-container-nav-flex-link"href="">Demander un visa</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-header-container-btn">
+            <a href="" class="menu-header-container-dc">deconnexion</a>
+          </div>
       </div>
     </div>
   </header>
   <!-- Fin header -->
-
-
   <section class="container-profile">
-
-
-
     <div class="row center-xs center-md center-lg box-rubrics">
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 container-elements">
         <!--<div class="col-xs-10 col-sm-6 col-md-6 col-lg-4 container-elements">-->
@@ -106,45 +96,34 @@
           <p class="title">Recherches avancées </p>
         </div>
       </div>
-
       <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
         <img src="image/mondeDesertique/image43.jpg" alt="" class="image2">
         <div class="box-title">
           <p class="title">Catalogue</p>
         </div>
       </div>
-
       <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
         <img src="image/passeport2.jpg" alt="" class="image2">
         <div class="box-title">
           <p class="title">Demander un visa</p>
         </div>
       </div>
-
-
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 container-specific"></div>
-
       <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
         <img src="image/planetes/efaja.png" alt="" class="image2">
         <div class="box-title">
           <p class="title">Devenez colons</p>
         </div>
       </div>
-
       <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
         <img src="image/satellite2.jpg" alt="" class="image2">
         <div class="box-title">
           <p class="title">Devenez technicien spatial</p>
         </div>
-
       </div>
-      <button type="submit" class="btn btn-start-order">CONNEXION</button>
+      <input type="submit" class="btn btn-start-order" value="CONNEXION">
     </div>
   </section>
   <div class="bg" alt="bg"></div>
-
-
-
 </body>
-
 </html>
