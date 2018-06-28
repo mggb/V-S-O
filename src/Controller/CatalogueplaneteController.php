@@ -16,7 +16,7 @@ class CatalogueplaneteController extends Controller
      */
     public function index(Request $request, PlaneteRepository $planeteRepository): Response
     {
-        
+
         return $this->render('catalogueplanete.html.twig', [
             'controller_name' => 'FrontPlaneteController',
             'title' => 'planete',
@@ -29,6 +29,7 @@ class CatalogueplaneteController extends Controller
      */
     public function postShow($id, PlaneteRepository $planeteRepository): Response
     {
+
         return $this->render('detailPlanete.html.twig', [
             'controller_name' => 'Info',
             'title' => 'planete',

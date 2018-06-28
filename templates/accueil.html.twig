@@ -20,6 +20,7 @@
         <div class="col-md-1 col-lg-1 containerDesktop-title">
             <span class="desktopTitle">VSO</span>
         </div>
+
         <nav class="col-md-9 col-lg-9 containerDesktop-menu">
             <ul class="desktopMenu">
                 <li>
@@ -40,7 +41,7 @@
         </nav>
 
         <div class="col-md-2 col-lg-2 containerDesktop-icons">
-            <a href=""><i class="fas fa-plus-circle"></i></a>
+            <i class="fas fa-plus-circle"></i>
         </div>
 
     </div>
@@ -105,13 +106,15 @@
     {% endfor %}
     {% endif %}
     <div class="row center-xs center-md center-lg box-rubrics">
+        <a href="{{ path('question') }}">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 container-elements">
             <!--<div class="col-xs-10 col-sm-6 col-md-6 col-lg-4 container-elements">-->
             <img src="{{ asset('bundles/build/img/image15.jpg') }}" alt="" class="image1">
             <div class="box-title">
-                <p class="title">Recherches avancées </p>
+                <p class="title"><a href="">Recherches avancées </p>
             </div>
         </div>
+        </a>
 
         <a href="{{ path('catalogueplanete') }}">
         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">

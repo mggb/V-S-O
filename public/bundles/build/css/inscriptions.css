@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('css/font/Montserrat-Regular.ttf');
+    src: url('css/font/Montserrat-Light.ttf');
+}
+
+/* LES MARGES */
+
+.bg, .color-filter {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+}
+
+.bg {
+    z-index: -2;
+}
+
+.color-filter {
+    z-index: -1;
+    background: rgba(74, 74, 74, 0.5);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.fond {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-top: 90px;
+}
+
+@media (min-width: 769px) {
+    .fond {
+        margin-top: 120px;
+    }
+}
+
+.test {}
+
+.form-titleSexe {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    font-size: 16px;
+    font-family: 'Montserrat-Light';
+}
+
+.form-sexe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    font-size: 16px;
+    font-family: 'Montserrat-Light'
+}
+
+.form-label {
+    font-size: 12px;
+    margin: 0;
+    display: block;
+    opacity: 1;
+}
+
+.form-controlSexe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0;
+    border-color: rgba(74, 74, 74, 0.5);
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    margin-left: 85px;
+}
+
+.inputContainer {
+    padding-bottom: 50px;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: rgb(74, 74, 74);
+    border-width: 0 0 0.5px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    outline-width: 0;
+    width: 100%;
+    background: transparent;
+    height: 20px;
+    font-size: 15px;
+    font-family: 'Montserrat-Regular';
+    color: rgb(74, 74, 74);
+}
+
+.btn-start-order {
+    background: #4888FF;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 35px;
+    transition: all 0.25s ease 0s;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+}
+
+@media (max-width: 769px) {
+    .btn-start-order {
+        margin-top: 20px;
+    }
+}
+
+.btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
+    color: #5e9bfc;
+}
+
+/* Ipad */
+
+@media (min-width: 769px) and (max-width: 1023px) {}
+
+/* Small tablet */
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Phones */
+
+@media (max-width: 480px) {}

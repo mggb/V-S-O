@@ -3,7 +3,9 @@
 namespace App\Form;
 
 use App\Entity\Planete;
+use Doctrine\DBAL\Types\Type;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -23,7 +25,7 @@ class PlaneteType extends AbstractType
             ->add('techno')
             ->add('environnement')
             ->add('histoire')
-            ->add('image')
+            ->add('image', FileType::class)
             ->add('matricul')
         ;
     }
