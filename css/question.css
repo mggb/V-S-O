@@ -4,7 +4,13 @@
 .titleStartPlanete{
   text-align: center;
 }
-
+.pricinpal{
+  text-align: center;
+}
+.secondary{
+  text-align: center;
+  font-size: 18px;
+}
 
 
 
@@ -71,4 +77,13 @@
 .left{
   display: flex;
   justify-content: flex-end;
+}
+
+.finishBUtuttonFind{
+  text-align: center;
+  height: 10px;
+  width: 20px;
+}
+.textFind{
+  text-align: center;
 }

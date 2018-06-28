@@ -6,6 +6,7 @@ var start = document.querySelector('.start')
 var pop = 0;
 
 
+
 start.addEventListener('click', function() {
   var u = 1;
   var o = 0;
@@ -69,6 +70,23 @@ start.addEventListener('click', function() {
   var o = 1;
   var stock = [];
   var contain = document.querySelector('.containerQuestionAndAnswer2');
+  function find() {
+    if (stock.length === 7 ) {
+      console.log('yolo');
+      numberquestion.innerHTML = '';
+      numberquestion.innerHTML += `
+    <p class="textQuestion">voila votre planette</p>
+    `
+    contain.innerHTML = '';
+    contain.innerHTML += `
+    <div class="col-xs-10 col-md-11 col-lg-11">
+      <h1 class="detailplanete-container-title pricinpal">felicitation</h1>
+      <p>Venez vite decouvrir la planette qui vous corespond, Ne perdez plus de temps <br> changer de vie</p>
+      <button  class="start"type="button" name="button">voir la fiche</button>
+    </div>
+  `;
+    }
+  }
 
   arrowLeft.addEventListener('click', function() {
     var choice = document.querySelectorAll('.checkboxChoice');
@@ -81,8 +99,10 @@ start.addEventListener('click', function() {
       if (choice[i].checked) {
         stock.push(choice[i].value)
         console.log(choice[i].value)
+        console.log(stock);
       }
     }
+
     numberquestion.innerHTML = '';
     numberquestion.innerHTML += `
   <p class="textQuestion">question ${u}/7</p>
@@ -129,6 +149,7 @@ start.addEventListener('click', function() {
     }
     o++
     u++
+    find()
   });
   arrowright.addEventListener('click', function() {
     o--
@@ -180,8 +201,7 @@ start.addEventListener('click', function() {
       if (textNext[i].textContent === " undefined ") {
         containAnsAndValue[i].innerHTML = '';
       }
-
     }
   })
-
+  find();
 });
