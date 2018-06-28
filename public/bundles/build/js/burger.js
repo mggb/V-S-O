@@ -4,12 +4,12 @@ var menutrue = false
 var classes = {open:'fas fa-bars burger-menu',back:'fas fa-times burger-menu'};
 burger.addEventListener('click',function () {
     if(menutrue === true){
-    burger.className  = classes.open;
-    menutrue = false;
+        burger.className  = classes.open;
+        menutrue = false;
     }
     else{
-    burger.className  = classes.back;
-    menutrue  = true;
+        burger.className  = classes.back;
+        menutrue  = true;
     }
     menu.classList.toggle('none')
 })

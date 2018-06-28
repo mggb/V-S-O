@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/header.css') }}" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/accueil.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/simpleHeader.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/font.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/accueil.css') }}" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
 </head>
 <body>
-<header class="container-header">
+<!-- test -->
+<header class="simpleHeader">
     <div class="row between-md between-lg containerDesktopMenu">
         <div class="col-md-1 col-lg-1 containerDesktop-title">
             <span class="desktopTitle">VSO</span>
@@ -22,8 +24,8 @@
                 <li>
                     <ul class="wrapper-desktopMenu">
                         <li class="menu-desktopItems"> <a class="menu-desktopLink" href="#">Acceuil</a></li>
-                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
-                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Catalogue</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancées</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="{{ path('catalogueplanete') }}">Catalogue</a></li>
                         <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
                             <ul class="sousMenu">
                                 <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir colons</a></li>
@@ -44,57 +46,86 @@
             {% endif %}
         </div>
     </div>
-    <div class="row center-xs center-lg container-menuMobile">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-title">
-            <span class="header-title-mobile">VSO</span>
-        </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-icons">
-            <div class="burger-menu">
-                <span class="burger-menu-lineone"></span>
-                <span class="burger-menu-linetwo"></span>
+    <div class="container-simpleHeader container-menuMobile">
+        <div class="row end-xs end-sm end-md end-lg box">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
+                <div class="logo">VSO</div>
             </div>
-            <i class="fas fa-plus-circle"></i>
-        </div>
-
-        <div class="menu-open">
-            <div class="container">
-                <div class="row between-xs container-header-open">
-                    <div class="col-xs-7 col-xs-offset-5 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 col-lg-7 col-lg-offset-5">
-                        <h2 class="title-header-open">V S O</h2>
-
-                        <div class="div-header-open">
-                            <img src="{{ asset('bundles/build/img/glass.png') }}" alt="glass">
-                            <img class="take" src="{{ asset('bundles/build/img/take.png') }}" alt="take">
-                        </div>
-                    </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
+                <div class="close-icon">
+                    <i class="fas fa-bars burger-menu"></i>
+                    <i class="fas fa-plus-circle" title="login"></i>
                 </div>
             </div>
-            <div class="containerList">
-                <ul class="containerli">
-                    <li class="li-menu"> <a class="link-menu" href="#">Acceuil</a></li>
-                    <li class="li-menu"> <a class="link-menu" href="">Catalogue</a></li>
-                    <li class="li-menu"> <a class="link-menu" href="">Devenir colons</a></li>
-                    <li class="li-menu"> <a class="link-menu" href="">Devenir technicien</a></li>
-                    <li class="li-menu"> <a class="link-menu" href="">Recherche avancée</a></li>
-                    <li class="li-menu"> <a class="link-menu" href="">Demander un visa</a></li>
+        </div>
+    </div>
+    <div class="menu-header-cover none">
+        <div class="menu-header-container">
+            <nav class="classmenu-header-container-nav">
+                <ul class="menu-header-container-nav-flex">
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Accueil</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Catalogue</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Devenir colons</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Devenir techniciens</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Recherche avancées</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Demander un visa</a>
+                    </li>
                 </ul>
-                <button class="conect-and-deconect" type="button" name="button">DECONNEXION</button>
+            </nav>
+            <div class="menu-header-container-btn">
+                <a href="" class="menu-header-container-dc">deconnexion</a>
             </div>
         </div>
     </div>
 </header>
-<section class="container-content">
-    <div class="row center-xs center-lg">
-        <div class="col-xs-10 col-sm-8 col-md-7 col-lg-7 container-elements">
-            <p class="main-title">Vous souhaitez changer de vie ?</p>
-            <p class="main-subTitle">Changer de monde.</p>
-            <p class="main-description">VSO vous accompagne et vous conseille pour toutes vos démarches, n'attendez plus, lancez vous!</p>
-            <a class="btn btn-start-order" href="{{ path('Oui_accueil') }}">DÉCOUVRIR</a>
+<img class="accueil-bg" src="{{ asset('bundles/build/img/milkyway.jpeg') }}" alt="background">
+<div class="bodyAccueil">
+    <section class="container-section">
+        <div class="container-titleForm">
+            <div class=" row center-xs container-form">
+                <div class="col-xs-10 col-sm-11 col-md-8 col-lg-8 login-inputContainer">
+                    <p class="main-title">Vous souhaitez changer de vie ?</p>
+                    <p class="main-subTitle">Changer de monde.</p>
+                    <p class="main-description">VSO vous accompagne et vous conseille pour toutes vos démarches, n'attendez plus, lancez vous!</p>
+
+                    <div class=" ">
+                        <a href="{{ path('Oui_accueil') }}" class="connexion" type="button" name="button">Lance toi</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+</div>
+
+
+
+
+<!--
+<section class="container-content">
+  <div class="row center-xs center-lg">
+    <div class="col-xs-10 col-sm-8 col-md-7 col-lg-7 container-elements">
+      <p class="main-title">Vous souhaitez changer de vie ?</p>
+      <p class="main-subTitle">Changer de monde.</p>
+      <p class="main-description">VSO vous accompagne et vous conseille pour toutes vos démarches, n'attendez plus, lancez vous!</p>
+      <button type="submit" class="btn btn-start-order">DÉCOUVRIR</button>
     </div>
+  </div>
 </section>
-<footer class="footer"></footer>
+-->
+
 </body>
-<script src="{{ asset('bundles/build/js/script.js') }}js/script.js"></script>
+<script src="{{ asset('bundles/build/js/script.js') }}"></script>
+<script src="{{ asset('bundles/build/js/burger.js') }}"></script>
 </html>
