@@ -46,6 +46,7 @@
   margin-left:24px;
   position:relative;
   cursor:pointer;
+  z-index:1;
 }
 .fa-plus-circle::after{
   content:'';
@@ -80,6 +81,7 @@
     content:'';
     top:5px;
     left:30px;
+    color: white;
   }
 
 }
@@ -167,6 +169,7 @@
     left:5px;
     width:18px;
     height:18px;
+    color: white;
   }
   .menu-header-cover{
     display:none;
@@ -246,9 +249,7 @@
   }
 }
 @media (min-width:769px) and (max-width:991px) {
-  .fa-plus-circle {
-    padding-left: 28px;
-  }
+
   .fa-search {
     padding-right: 28px;
   }
