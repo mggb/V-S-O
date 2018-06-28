@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Début header -->
-
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="css/reset.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/font.css" type="text/css">
   <link rel="stylesheet" href="css/header.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="css/homePageNonlog.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/felicitationMatricule.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +15,7 @@
 </head>
 
 <body>
+  <!-- header !-->
   <header class="container-header">
     <div class="row between-md between-lg containerDesktopMenu">
       <div class="col-md-1 col-lg-1 containerDesktop-title">
@@ -91,60 +90,45 @@
       </div>
     </div>
   </header>
-  <!-- Fin header -->
-
-
-  <section class="container-profile">
 
 
 
-    <div class="row center-xs center-md center-lg box-rubrics">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 container-elements">
-        <!--<div class="col-xs-10 col-sm-6 col-md-6 col-lg-4 container-elements">-->
-        <img src="image/futuristic.jpg" alt="" class="image1">
-        <div class="box-title">
-          <p class="title">Recherches avancées </p>
+  <span class="catalogueplanete-cover"></span>
+  <img src="image/passeport2.jpg" class="catalogueplanete-bg">
+
+  <div class="catalogueplanete-container">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-10 col-md-1O col-lg-1O">
+
+        <div class="row center-xs center-lg catalogueplanete-container-content">
+
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-1O container-content-texte">
+
+            <h1 class="form-title">Félicitation !</h1>
+
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+
+            <h2 class="form-mainSentence">Vous êtes bien enregistré sur VSO.</h2>
+            <h2 class="form-subSentence">Voici votre matricule spatial :</h2>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <p class="matricule-number">9 0 3 7 1 9 3 4</p>
+          </div>
         </div>
       </div>
-
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
-        <img src="image/mondeDesertique/image43.jpg" alt="" class="image2">
-        <div class="box-title">
-          <p class="title">Catalogue</p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
-        <img src="image/passeport2.jpg" alt="" class="image2">
-        <div class="box-title">
-          <p class="title">Demander un visa</p>
-        </div>
-      </div>
-
-
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 container-specific"></div>
-
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
-        <img src="image/planetes/efaja.png" alt="" class="image2">
-        <div class="box-title">
-          <p class="title">Devenez colons</p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 container-elements">
-        <img src="image/satellite2.jpg" alt="" class="image2">
-        <div class="box-title">
-          <p class="title">Devenez technicien spatial</p>
-        </div>
-
-      </div>
-      <button type="submit" class="btn btn-start-order">CONNEXION</button>
     </div>
-  </section>
-  <div class="bg" alt="bg"></div>
 
+  </div>
+  <a class="catalogueplanete-container-content-link" href="#">se connecter</a>
+  </div>
 
-
+  <footer class="footer"></footer>
 </body>
+<script src="js/script.js"></script>
+
 
 </html>

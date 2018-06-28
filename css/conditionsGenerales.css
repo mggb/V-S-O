@@ -1,0 +1,132 @@
+p {}
+
+.condition-cover {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(74, 74, 74, 0.4);
+  z-index: -9998;
+}
+
+.condition-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -9999;
+}
+
+.condition-container {
+  position: absolute;
+  overflow: scroll;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  background: white;
+  padding-bottom: 16px;
+}
+
+.condition-container-title {
+  font-family: 'Montserrat SemiBold';
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.condition-container-content-text {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  text-align: left;
+}
+
+.condition-title {
+  font-family: 'Montserrat Light';
+  font-size: 15px;
+  color: rgb(74, 74, 74);
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .condition-container-title {
+    margin-top: 36px;
+    font-size: 24px;
+  }
+  .condition-container-content {
+    margin-top: 8px;
+  }
+  .condition-title {
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+  }
+}
+
+.input-box {
+  margin-top: 20px;
+}
+
+.condition-container-content-text p {
+  font-family: "Montserrat Regular";
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+@media (min-width: 576px) {
+  .condition-container-content-text p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .condition-container-content-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.condition-container-content-link {
+  transform: translateX(-50%);
+  margin-left: 50%;
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat Light";
+  background: #4f93f5;
+  font-size: 16px;
+  letter-spacing: 0.9pt;
+  padding: 5pt 20pt;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20px;
+}
+
+.paragraphe {
+  padding-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .condition-container-content-link {
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .condition-container-content-link {
+    font-size: 20px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}

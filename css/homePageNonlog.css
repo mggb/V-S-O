@@ -21,6 +21,7 @@
   height: 100vh;
   max-height: 100%;
   z-index: -1;
+  background-color: #000000;
 }
 
 .box-rubrics {
@@ -29,11 +30,20 @@
 
 .image2 {
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .image1 {
   height: 250px;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 @media (min-width: 990px) {
@@ -54,7 +64,7 @@
     display: block;
   }
   .box-rubrics {
-    margin-top: 6%;
+    margin-top: 8%;
   }
 }
 
@@ -73,20 +83,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .btn-start-order {
   background: #4888FF;
   /*background: linear-gradient(to right, rgb(48, 35, 174), rgb(83, 160, 253));*/
-  border-radius: 5px;
   font-size: 16px;
+  letter-spacing: 0.9pt;
+  padding: 5pt 20pt;
+  border-radius: 8px;
+  text-transform: uppercase;
   color: white;
-  margin-bottom: 50px;
-  width: 150px;
-  height: 40px;
   font-family: 'Montserrat Light';
-  transition: all 0.25s ease 0s;
-  letter-spacing: 1px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 480px) {
