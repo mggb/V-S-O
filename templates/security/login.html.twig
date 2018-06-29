@@ -20,20 +20,15 @@
         <div class="col-md-1 col-lg-1 containerDesktop-title">
             <span class="desktopTitle">VSO</span>
         </div>
-
         <div class="col-md-2 col-lg-2 containerDesktop-icons">
             <i class="fas fa-plus-circle"></i>
         </div>
-
     </div>
-
 
     <div class="row center-xs center-lg container-menuMobile">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-title">
             <span class="header-title-mobile">VSO</span>
         </div>
-
-
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-icons">
             <div class="burger-menu">
                 <span class="burger-menu-lineone"></span>
@@ -41,7 +36,6 @@
             </div>
             <i class="fas fa-plus-circle"></i>
         </div>
-
 
         <div class="menu-open">
             <div class="container">
@@ -87,7 +81,7 @@
                     <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
 
                     <div class="row between-xs containerLink">
-                        <a class="col-xs-8 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1 link-mdpo" href="#">Mot de passe oublié ?</a>
+                        <a class="col-xs-8 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1 link-mdpo" href="{{ path('oublie') }}">Mot de passe oublié ?</a>
                         <a class="col-xs-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1  link-register" href="{{ path('user_registration') }}">S'inscrire</a>
                     </div>
                     <div class=" ">
