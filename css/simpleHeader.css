@@ -80,7 +80,7 @@
   .fa-plus-circle::after{
     content:'';
     top:5px;
-    left:30px;
+    left:5px;
     color: white;
   }
 
