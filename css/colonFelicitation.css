@@ -1,4 +1,4 @@
-.catalogueplanete-cover {
+.colonfelicitation-cover {
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -10,7 +10,7 @@
   z-index: -9998;
 }
 
-.catalogueplanete-bg {
+.colonfelicitation-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,17 +21,17 @@
   z-index: -9999;
 }
 
-.catalogueplanete-container {
+.colonfelicitation-container {
   position: absolute;
   overflow: hidden;
-  bottom: 0;
-  height: 50vh;
+  top: 50vh;
+  min-height: 50vh;
   width: 100%;
   background: white;
   padding-bottom: 16px;
 }
 
-.catalogueplanete-container-title {
+.colonfelicitation-container-title {
   font-family: 'Montserrat SemiBold';
   font-size: 18px;
   color: #4a4a4a;
@@ -92,29 +92,28 @@
 }
 
 .container-content-texte {
-  margin-top: 60px;
-}
-
-.catalogueplanete-container-content {
   margin-top: 20px;
 }
 
-.catalogueplanete-container-content-text {
+.colonfelicitation-container-content {
+  margin-top: 20px;
+}
+
+.colonfelicitation-container-content-text {
   display: flex;
-  height: 30vh;
   align-items: flex-start;
   position: relative;
   text-align: left;
 }
 
-.catalogueplanete-container {
+.colonfelicitation-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media (min-width: 768px) {
-  .catalogueplanete-container-title {
+  .colonfelicitation-container-title {
     margin-top: 36px;
     font-size: 24px;
   }
@@ -135,13 +134,8 @@
   }
 }
 
-@media (min-width: 576px) {
-  .catalogueplanete-container-content-text {
-    height: 40vh;
-  }
-}
 
-.catalogueplanete-container-content-text p {
+.colonfelicitation-container-content-text p {
   font-family: "Montserrat Regular";
   color: #4a4a4a;
   font-size: 15px;
@@ -149,24 +143,21 @@
 }
 
 @media (min-width: 576px) {
-  .catalogueplanete-container-content-text p {
+  .colonfelicitation-container-content-text p {
     font-size: 18px;
     line-height: 27px;
   }
 }
 
 @media (min-width: 768px) {
-  .catalogueplanete-container-content-text p {
+  .colonfelicitation-container-content-text p {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-.catalogueplanete-container-content-link {
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
+.colonfelicitation-container-content-link {
+
   display: inline-block;
   text-align: center;
   font-family: "Montserrat Light";
@@ -180,13 +171,13 @@
 }
 
 @media (min-width: 576px) {
-  .catalogueplanete-container-content-link {
+  .colonfelicitation-container-content-link {
     bottom: 20px;
   }
 }
 
 @media (min-width: 768px) {
-  .catalogueplanete-container-content-link {
+  .colonfelicitation-container-content-link {
     font-size: 20px;
   }
 }
