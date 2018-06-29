@@ -24,8 +24,8 @@
 .catalogueplanete-container {
   position: absolute;
   overflow: hidden;
-  bottom: 0;
-  height: 50vh;
+  top: 50vh;
+  min-height: 50vh;
   width: 100%;
   background: white;
   padding-bottom: 16px;
@@ -35,7 +35,7 @@
   font-family: 'Montserrat SemiBold';
   font-size: 18px;
   color: #4a4a4a;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -53,17 +53,11 @@
 
 .catalogueplanete-container-content-text {
   display: flex;
-  height: 30vh;
   align-items: flex-start;
   position: relative;
   text-align: left;
 }
 
-@media (min-width: 576px) {
-  .catalogueplanete-container-content-text {
-    height: 40vh;
-  }
-}
 
 .catalogueplanete-container-content-text p {
   font-family: "Montserrat Regular";
@@ -87,12 +81,10 @@
 }
 
 .catalogueplanete-container-content-link {
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
   display: inline-block;
   text-align: center;
+  margin-left:50%;
+  transform:translateX(-50%);
   font-family: "Montserrat Light";
   background: #4f93f5;
   font-size: 16px;
@@ -101,6 +93,7 @@
   border-radius: 8px;
   text-transform: uppercase;
   color: white;
+  margin-top:16px;
 }
 
 @media (min-width: 576px) {
