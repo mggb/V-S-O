@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/font.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/header.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/login.css') }}" type="text/css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSO</title>
+</head>
+
+<body>
+<!-- navbar -->
+<header class="container-header">
+    <div class="row between-md between-lg containerDesktopMenu">
+        <div class="col-md-1 col-lg-1 containerDesktop-title">
+            <span class="desktopTitle">VSO</span>
+        </div>
+        <div class="col-md-2 col-lg-2 containerDesktop-icons">
+            <i class="fas fa-plus-circle"></i>
+        </div>
+    </div>
+
+    <div class="row center-xs center-lg container-menuMobile">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-title">
+            <span class="header-title-mobile">VSO</span>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 container-icons">
+            <div class="burger-menu">
+                <span class="burger-menu-lineone"></span>
+                <span class="burger-menu-linetwo"></span>
+            </div>
+            <i class="fas fa-plus-circle"></i>
+        </div>
+
+        <div class="menu-open">
+            <div class="container">
+                <div class="row between-xs container-header-open">
+                    <div class="col-xs-7 col-xs-offset-5 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 col-lg-7 col-lg-offset-5">
+                        <h2 class="title-header-open">V S O</h2>
+
+                        <div class="div-header-open">
+                            <img src="image/glass.png" alt="glass">
+                            <img class="take" src="{{ asset('bundles/build/img/take.jpg') }}" alt="take">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerList">
+                <ul class="containerli">
+                    <li class="li-menu"> <a class="link-menu" href="#">Acceuil</a></li>
+                    <li class="li-menu"> <a class="link-menu" href="">Catalogue</a></li>
+                    <li class="li-menu"> <a class="link-menu" href="">Devenir colons</a></li>
+                    <li class="li-menu"> <a class="link-menu" href="">Devenir technicien</a></li>
+                    <li class="li-menu"> <a class="link-menu" href="">Recherche avancée</a></li>
+                    <li class="li-menu"> <a class="link-menu" href="">Demander un visa</a></li>
+                </ul>
+                <button class="conect-and-deconect" type="button" name="button">DECONNEXION</button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- navbar end -->
+<img class="login-bg" src="{{ asset('bundles/build/img/astronaute.jpg') }}" alt="background">
+<div class="bodyLogin">
+    <section class="container-section">
+        <div class="container-titleForm">
+            <div class="row center-xs ">
+                <h2 class="col-xs-10 col-sm-10 col-md-10 col-lg-10 title-login">Migration spacial</h2>
+            </div>
+            <form class=" row center-xs container-form" action="{{ path('login') }}" method="post" role="form">
+                <div class="col-xs-10 col-sm-11 col-md-8 col-lg-8 login-inputContainer">
+                    <input type="email" class="login-input login-imatricule" id="username" name="_username" placeholder="Email">
+                    <input type="password" class="login-input login-password " id="password" name="_password" placeholder="Mot de passe">
+
+                    <input type="hidden" name="_target_path" value="{{ app.request.get('redirect_to') }}"/>
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+
+                    <div class="row between-xs containerLink">
+                        <a class="col-xs-8 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1 link-mdpo" href="{{ path('oublie') }}">Mot de passe oublié ?</a>
+                        <a class="col-xs-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1  link-register" href="{{ path('user_registration') }}">S'inscrire</a>
+                    </div>
+                    <div class=" ">
+                        <button class="connexion" type="submit" name="button">CONNEXION</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>

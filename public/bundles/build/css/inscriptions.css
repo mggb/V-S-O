@@ -1,0 +1,177 @@
+/* LES MARGES */
+
+.bg, .color-filter {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+}
+
+.bg {
+    z-index: -2;
+}
+
+.color-filter {
+    z-index: -1;
+    background: rgba(74, 74, 74, 0.5);
+}
+
+.container {
+    margin: 0 auto;
+    max-width:100%;
+    overflow:hidden;
+}
+
+.fond {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-top: 34px;
+}
+
+@media (min-width: 769px) {
+    .fond {
+        margin-top: 50px;
+    }
+}
+
+.test {}
+
+.form-titleSexe {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    font-size: 16px;
+    font-family: 'Montserrat Light';
+}
+
+.form-sexe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    font-size: 16px;
+    font-family: 'Montserrat Light'
+}
+
+.form-label {
+    font-size: 16px;
+    margin: 0;
+    display: block;
+    opacity: 1;
+}
+
+.form-controlSexe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0;
+    border-color: rgba(74, 74, 74, 0.5);
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    margin-left: 85px;
+    width: 30px;
+    height: 20px;
+    max-width: 100%;
+}
+
+.inputContainer {
+    padding-bottom:28px;
+}
+@media (min-width: 992px) {
+    .inputContainer {
+        padding-top:50px;
+    }
+}
+.form-control {
+    border-radius: 0;
+    border-color: rgb(74, 74, 74);
+    border-width: 0 0 0.5px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    outline-width: 0;
+    width: 100%;
+    background: transparent;
+    height: 25px;
+    font-size: 15px;
+    font-family: 'Montserrat Regular';
+    color: black;
+}
+
+.btn-start-order {
+    background: #4888FF;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding:6px 26px;
+    transition: all 0.25s ease 0s;
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    border:none;
+}
+
+@media (max-width: 769px) {
+    .btn-start-order {
+        margin-top: 20px;
+    }
+}
+
+.form-control::-webkit-input-placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.form-control::-moz-placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.form-control:-ms-input-placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.form-control::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+
+/* Ipad */
+
+@media (min-width: 989px) {
+    .form-control::-webkit-input-placeholder {
+        color: black;
+        font-size: 18px;
+    }
+    .form-control::-moz-placeholder {
+        color: black;
+        font-size: 18px;
+    }
+    .form-control:-ms-input-placeholder {
+        color: black;
+        font-size: 18px;
+    }
+    .form-control::placeholder {
+        color: black;
+        font-size: 18px;
+    }
+    .form-titleSexe {
+        font-size: 18px;
+    }
+}
+
+/* Small tablet */
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Phones */
+
+@media (max-width: 480px) {}

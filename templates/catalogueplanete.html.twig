@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/font.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/simpleHeader.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/catalogueplanete.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSO</title>
+</head>
+
+<body>
+<!-- header -->
+<header class="simpleHeader">
+    <div class="row between-md between-lg containerDesktopMenu">
+        <div class="col-md-1 col-lg-1 containerDesktop-title">
+            <span class="desktopTitle">VSO</span>
+        </div>
+
+        <nav class="col-md-9 col-lg-9 containerDesktop-menu">
+            <ul class="desktopMenu">
+                <li>
+                    <ul class="wrapper-desktopMenu">
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="{{ path('home') }}">Acceuil</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">catalogueplanete</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
+                            <ul class="sousMenu">
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="{{ path('home') }}">Devenir colons</a></li>
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir technicien</a></li>
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Demander un visa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="col-md-2 col-lg-2 containerDesktop-icons">
+            <i class="fas fa-plus-circle" title="login"></i>
+        </div>
+    </div>
+
+    <div class="container-simpleHeader container-menuMobile">
+        <div class="row end-xs end-sm end-md end-lg box">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
+                <div class="logo">VSO</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
+                <div class="close-icon">
+                    <i class="fas fa-bars burger-menu"></i>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-header-cover none">
+        <div class="menu-header-container">
+            <nav class="classmenu-header-container-nav">
+                <ul class="menu-header-container-nav-flex">
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Accueil</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">catalogueplanete</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Devenir colons</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Devenir techniciens</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Recherche avancées</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link"href="">Demander un visa</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-header-container-btn">
+                <a href="" class="menu-header-container-dc">deconnexion</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="catalogueplanete-container">
+    <div class="row center-xs">
+        <div class="col-xs-10 col-md-11 col-lg-11">
+
+            <div class="row center-xs catalogueplanete-container-content">
+                <div class="col-xs-1 catalogueplanete-container-content-arrow">
+                    <img src="{{ asset('bundles/build/img/fleche-gauche.png') }}" class="left" alt="previous">
+                </div>
+                <div class="col-xs-9">
+                    <div class="catalogueplanete-container-content-text">
+                        <div class="box-slider">
+
+                            {% for planete in planetes %}
+
+                            <div class="catalogueplanete-container-content-text-item">
+                                <h1 class='catalogueplanete-container-title'>{{ planete.nom ({id: planete.id}) }}</h1>
+                                <p>{{ planete.histoire }}</p>
+                                <a class="catalogueplanete-container-content-link" href="{{ path('post_planete', {id: planete.id}) }}">caracteristiques</a>
+                            </div>
+                            <img src="{{ asset('bundles/build/img/agetoton.png') }}" class="catalogueplanete-bg" alt="">
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 catalogueplanete-container-content-arrow">
+                    <img src="{{ asset('bundles/build/img/fleche-droite.png') }}" class="right" alt="next">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer"></footer>
+</body>
+<script src="{{ asset('bundles/build/js/burger.js') }}js/burger.js"></script>
+<script src="{{ asset('bundles/build/js/slider.js') }}"></script>
+
+
+</html>
+</html>

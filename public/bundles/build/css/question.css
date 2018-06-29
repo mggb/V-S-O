@@ -1,0 +1,114 @@
+.containerStartPlanete{
+    margin-top: 1%;
+}
+.titleStartPlanete{
+    text-align: center;
+}
+.pricinpal{
+    text-align: center;
+}
+.secondary{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat Medium';
+}
+
+
+
+.image-question-header{
+    width: 100vw;
+    height: 35vh;
+    background-image: url("../img/Saletlite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.numberQuestion{
+    position: absolute;
+    height: 5vh;
+    width: 50vw;
+    background: white;
+    border: 1px solid;
+    border-radius: 12px;
+    margin: -19px 0 0 24%;
+}
+.textQuestion{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat Medium';
+    text-align: center;
+}
+.containerQuestionAndAnswer{
+    height: 55vh;
+    width: 100%;
+    margin-top: 8vh;
+}
+.containerQuestion{
+    margin: 8vh 0 0 30px;
+}
+.Question{
+    font-size: 16px;
+    font-family: 'Montserrat SemiBold';
+}
+.ContainerAnswer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 65px;
+}
+.ContainerAnswerAndValue{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 45px;
+}
+.checkboxChoice{
+    width: 15px;
+    height: 15px;
+}
+.textNextCheckbox{
+    font-size: 14px;
+    font-family: 'Montserrat Regular';
+}
+.containerArrow{
+    height: 6vh;
+    margin-top: 8vh;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.containerimgArrow{
+    width: 50%;
+}
+.left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.finishBUtuttonFind{
+    text-align: center;
+    height: 10px;
+    width: 20px;
+}
+.textFind{
+
+    margin-top: 54px;
+    text-align: center;
+    font-family:"Montserrat Medium";
+}
+.text-in-finishPlanette{
+
+    font-size: 15px;
+    font-family:"Montserrat Medium";
+    line-height: 22px;
+}
+.button-center{
+
+    margin: 25px auto;
+    display: block;
+    width: 201px;
+    height: 45px;
+    border-radius: 14px;
+    background: rgb(79 148 245);
+}
+.taille-marge{
+    margin: 0 16px;
+}

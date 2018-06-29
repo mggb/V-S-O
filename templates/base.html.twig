@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% if is_granted('ROLE_USER') %}
+
+            {% else %}
+                t'es pas co ;)
+                <a href="{{ path('login') }}">connecte toi</a></br>
+                <a href="{{ path('user_registration') }}">Inscris-toi</a></br>
+            {% endif %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

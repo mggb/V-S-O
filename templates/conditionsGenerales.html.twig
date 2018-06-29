@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/font.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/simpleHeader.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/conditionsGenerales.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSO</title>
+</head>
+
+<body>
+<!-- header !-->
+<header class="simpleHeader">
+    <div class="row between-md between-lg containerDesktopMenu">
+        <div class="col-md-1 col-lg-1 containerDesktop-title">
+            <span class="desktopTitle">VSO</span>
+        </div>
+
+        <nav class="col-md-9 col-lg-9 containerDesktop-menu">
+            <ul class="desktopMenu">
+                <li>
+                    <ul class="wrapper-desktopMenu">
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="{{ path('Oui_accueil') }}">Acceuil</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancées</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Catalogue</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
+                            <ul class="sousMenu">
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir colons</a></li>
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Devenir technicien</a></li>
+                                <li class="sousMenu-desktopItems"><a class="sousMenu-desktopLink" href="#">Demander un visa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="col-md-2 col-lg-2 containerDesktop-icons">
+            <i class="fas fa-plus-circle" title="login"></i>
+        </div>
+    </div>
+
+    <div class="container-simpleHeader container-menuMobile">
+        <div class="row end-xs end-sm end-md end-lg box">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
+                <div class="logo">VSO</div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
+                <div class="close-icon">
+                    <i class="fas fa-bars burger-menu"></i>
+                    <i class="fas fa-plus-circle" title="login"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-header-cover none">
+        <div class="menu-header-container">
+            <nav class="classmenu-header-container-nav">
+                <ul class="menu-header-container-nav-flex">
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link" href="{{ path('Oui_accueil') }}">Accueil</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link" href="">Catalogue</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link" href="">Devenir colons</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link" href="">Devenir techniciens</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link" href="">Recherche avancées</a>
+                    </li>
+                    <li class="menu-header-container-nav-flex-item">
+                        <a class="menu-header-container-nav-flex-link" href="">Demander un visa</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-header-container-btn">
+                <a href="" class="menu-header-container-dc">deconnexion</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<span class="condition-cover"></span>
+<img src="{{ asset('bundles/build/img/colons.jpeg') }}" class="condition-bg">
+
+<div class="condition-container">
+    <div class="row center-xs">
+        <div class="col-xs-10 col-md-11 col-lg-11">
+            <h1 class='condition-container-title'>Conditions générales</h1>
+            <div class="row center-xs condition-container-content">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 condition-container-content-text">
+                    <p class="paragraphe">S’engager en tant que colon est un acte de courage, de bravoure et d’honneur. Vous offrez au futur, le meilleur de vous même. Vous affronterez l’inconnu et tous ses dangers. Pour cela notre humanité entière vous remercie. Tantôt succès et
+                        tantôt échec, nous nous sommes toujours relevé pour aller de l’avant, et voyez où nous en sommes. Nous sommes allez plus loin que toute personne auparavant baissant de nouveaux monde, jadis impensable pour nos ancêtres et seulement rêvé
+                        dans les meilleurs films de sciences fiction. C’étaient leur rêves, c’est notre réalité. Chaque grande avancée, cache une part de risque. Un risque que vous serez prêt à prendre une fois engagé.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 condition-container-content-text">
+                    <p class="paragraphe">Après avoir postulé, votre candidature est envoyé au ministère de la conquête et de la défense spatiale de votre nation. Ces derniers seront en charge de traiter votre demande. Après examen de votre dossier citoyen, vous serez convoqué pour
+                        divers entretiens afin de valider ou non votre demande. Le cas échéant, vous recevrez un mail pour vous en avertir. Il se peut toutefois que vous soyez redirigé vers d’autres missions citoyennes.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 condition-container-content-text">
+                    <p class="paragraphe">Après acceptation de votre demande, vous intégrerez un programme de préparation spatiale pour vous préparer au mieux à votre voyage.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 condition-container-content-text">
+                    <p class="paragraphe"><span class="underline">À noter</span> : nous ne nous tenons nullement responsable de tout échec de ou fin tragique de la mission. Les missions peuvent être dangereuses, vous devez avoir conscience qu’il peut s’agir dans certain cas tragique,
+                        d’un aller sans retour.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 condition-container-content-text">
+                    <p class="paragraphe"><span class="underline">Important</span> : une fois engagé dans le programme, vous ne pourrez pas revenir en arrière. Sauf cas spécifique qui sera traité par un comité pour juger de la recevabilité de ce motif.</p>
+                </div>
+
+
+                <div class="col-xs-12 col-md-12 col-lg-12 condition-container-content-text">
+                    <p>
+
+                        En cochant la case des conditions générales, vous attestez avoir pris connaissance de ces informations et acceptez de vous soumettre à celles-ci. </p>
+
+                </div>
+                <div class="col-xs-12 col-md-10 col-lg-10 input-box">
+                    <label class="condition-title" for="radio2">J'accepte les conditions générales</label>
+                    <input class="condition" id="radio2" type="radio" name="choice" value="true">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a class="condition-container-content-link" href="{{ path('envois') }}">postuler</a>
+
+</div>
+<footer class="footer"></footer>
+</body>
+<script src="{{ asset('bundles/build/js/script.js') }}"></script>
+<script src="{{ asset('bundles/build/js/slider.js') }}"></script>
+</html>

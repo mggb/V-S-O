@@ -1,0 +1,253 @@
+.container-header {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.burger-menu {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.burger-menu-lineone, .burger-menu-linetwo {
+    display: block;
+    background: white;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.burger-menu-lineone {
+    width: 100%;
+}
+
+.burger-menu-linetwo {
+    margin-top: 6px;
+    width: 60%;
+    float: right;
+    clear: both;
+}
+
+/* Menu desktop */
+
+@media (min-width: 992px) {
+    .wrapper-desktopMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .desktopMenu {
+        padding-top: 8px;
+        position: relative;
+        z-index: 55555;
+    }
+    .containerDesktopMenu {
+        margin-top: 40px;
+    }
+    .sousMenu {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding-top: 16px;
+    }
+    .sousMenu-desktopItems {
+        width: 150px;
+        padding-bottom: 18px;
+        font-family: 'Montserrat Light';
+        font-size: 16px;
+        color: white;
+    }
+    .menu-desktopItems:last-child:hover .sousMenu {
+        display: block;
+    }
+    .sousMenu-desktopLink {
+        color: white;
+    }
+    .test {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .containerDesktop-title {
+        display: flex;
+        justify-content: center;
+    }
+    .container-header {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .containerDesktop-icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-desktopLink {
+        font-family: 'Montserrat Light';
+        font-size: 16px;
+        color: white;
+    }
+    .desktopTitle {
+        font-family: 'Montserrat Regular';
+        font-size: 32px;
+        color: white;
+        letter-spacing: 20px;
+        display: inline-block
+    }
+}
+
+/* Fin menu desktop */
+
+@media (min-width: 992px) {
+    .container-menuMobile {
+        display: none !important;
+    }
+}
+
+.container-menuMobile {
+    margin-top: 25px;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 4px;
+}
+
+.header-title-mobile {
+    font-size: 26px;
+    font-family: 'Montserrat Regular';
+    color: white;
+    letter-spacing: 8px;
+}
+
+.fa-bars {
+    color: rgb(255, 255, 255);
+}
+
+.fa-plus-circle {
+    color: rgb(79, 147, 245);
+    font-size: 28px;
+    padding-left: 25px;
+    position: relative;
+    z-index: 9999;
+}
+
+.fa-bars {
+    font-size: 25px;
+}
+
+.fa-search {
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.menu-open {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("../image/image6.jpg");
+    background-size: cover;
+    /* thomas: "j'ai ajouté un bg size"*/
+    overflow: hidden;
+    display: none;
+}
+
+.padding-leger {
+    padding-left: 1px;
+}
+
+.title-header-open, .div-header-open {
+    display: inline-block;
+}
+
+.title-header-open {
+    width: 60%;
+    margin-left: 8.333333%;
+}
+
+.div-header-open {
+    min-width: 25%;
+    text-align: right;
+}
+
+.containerList {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 18px;
+    height: 565px;
+    margin: 59px 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerli {
+    margin: 0 0px 0px 0px;
+}
+
+.li-menu {
+    padding: 53px 0 0 0;
+}
+
+.conect-and-deconect {
+    width: 159px;
+    border-radius: 10px;
+    height: 34px;
+    background-color: rgba(79, 147, 245, 1);
+    color: white;
+    margin: 34px auto 0 auto;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+@media (min-width:769px) and (max-width:991px) {
+    .fa-plus-circle {
+        padding-left: 28px;
+    }
+    .fa-search {
+        padding-right: 28px;
+    }
+    .container-header {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .containerList {
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .containerDesktopMenu {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 2000px) {}
+
+/* Ipad */
+
+@media (min-width: 769px) and (max-width: 991px) {}
+
+/* Small tablet */
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Phones */
+
+@media (max-width: 480px) {}
