@@ -22,12 +22,14 @@
 
 .container {
   margin: 0 auto;
+  max-width:100%;
+  overflow:hidden;
 }
 
 .fond {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
-  margin-top: 90px;
+  margin-top: 34px;
 }
 
 @media (min-width: 769px) {
@@ -79,9 +81,13 @@
 }
 
 .inputContainer {
-  padding-bottom: 50px;
+  padding-bottom:28px;
 }
-
+@media (min-width: 992px) {
+  .inputContainer {
+    padding-top:50px;
+  }
+}
 .form-control {
   border-radius: 0;
   border-color: rgb(74, 74, 74);
@@ -99,18 +105,16 @@
 
 .btn-start-order {
   background: #4888FF;
-  border-radius: 5px;
+  border-radius: 4px;
   color: white;
   font-size: 16px;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 15px;
   margin-bottom: 30px;
-  width: 200px;
-  height: 35px;
+  padding:6px 26px;
   transition: all 0.25s ease 0s;
   font-family: 'Montserrat Regular';
   font-size: 16px;
+  border:none;
 }
 
 @media (max-width: 769px) {
@@ -139,9 +143,6 @@
   font-size: 16px;
 }
 
-.btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
-  color: #5e9bfc;
-}
 
 /* Ipad */
 

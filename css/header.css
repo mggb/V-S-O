@@ -98,9 +98,7 @@
     display: inline-block
   }
 }
-.container-icons {
-  padding-left:24px;
-}
+
 /* Fin menu desktop */
 
 @media (min-width: 992px) {

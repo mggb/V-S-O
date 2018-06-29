@@ -1,0 +1,10 @@
+.footer{
+  width:100vw;
+  height:40px;
+  display:flex;
+  align-items:center;
+  background:black;
+}
+.footer p{
+  color:white;
+}

@@ -5,27 +5,29 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/font.css" type="text/css">
-  <link rel="stylesheet" href="css/simpleHeader.css" type="text/css">
-  <link rel="stylesheet" href="css/login.css" type="text/css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/simpleHeader.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/colonFelicitation.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VSO</title>
 </head>
 
 <body>
-  <!-- navbar -->
+  <!-- header !-->
   <header class="simpleHeader">
     <div class="row between-md between-lg containerDesktopMenu">
       <div class="col-md-1 col-lg-1 containerDesktop-title">
         <span class="desktopTitle">VSO</span>
       </div>
+
       <nav class="col-md-9 col-lg-9 containerDesktop-menu">
         <ul class="desktopMenu">
           <li>
             <ul class="wrapper-desktopMenu">
               <li class="menu-desktopItems"> <a class="menu-desktopLink" href="#">Acceuil</a></li>
-              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
+              <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancées</a></li>
               <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Catalogue</a></li>
               <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
                 <ul class="sousMenu">
@@ -38,10 +40,12 @@
           </li>
         </ul>
       </nav>
+
       <div class="col-md-2 col-lg-2 containerDesktop-icons">
         <i class="fas fa-plus-circle" title="login"></i>
       </div>
     </div>
+
     <div class="container-simpleHeader container-menuMobile">
       <div class="row end-xs end-sm end-md end-lg box">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingR">
@@ -50,7 +54,7 @@
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 paddingL">
           <div class="close-icon">
             <i class="fas fa-bars burger-menu"></i>
-            <i class="fas fa-plus-circle"></i>
+            <i class="fas fa-plus-circle" title="login"></i>
           </div>
         </div>
       </div>
@@ -86,31 +90,39 @@
     </div>
   </header>
 
-    <!-- navbar end -->
 
-    <img class="login-bg" src="image/astronaute.jpg" alt="background">
-    <div class="bodyLogin">
-      <section class="container-section">
-        <div class="container-titleForm">
-          <div class="row center-xs ">
-            <h2 class="col-xs-10 col-sm-10 col-md-10 col-lg-10 title-login">Migration spatial</h2>
+
+  <span class="colonfelicitation-cover"></span>
+  <img src="image/colons.jpeg" class="colonfelicitation-bg">
+
+  <div class="colonfelicitation-container">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-10 col-md-1O col-lg-1O">
+
+        <div class="row center-xs center-lg colonfelicitation-container-content">
+
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-1O container-content-texte">
+
+            <h1 class="form-title">Félicitation !</h1>
+
           </div>
-          <form class=" row center-xs container-form" action="#" method="post" role="form">
-            <div class="col-xs-10 col-sm-11 col-md-8 col-lg-8 login-inputContainer">
-              <input type="text" class="login-input login-imatricule" id="matricule" name="imatricule" placeholder="Matricule spatiale">
-              <input type="password" class="login-input login-password " id="mdp" name="imatricule" placeholder="Mot de passe">
-              <div class="row between-xs containerLink">
-                <a class="col-xs-8 col-md-7 col-md-offset-1 col-lg-7 col-lg-offset-1 link-mdpo" href="#">Mot de passe oublié ?</a>
-                <a class="col-xs-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1  link-register" href="#">S'inscrire</a>
-              </div>
-              <div class=" ">
-                <input class="connexion" type="button" name="button" value="CONNEXION">
-              </div>
-            </div>
-          </form>
+          <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12">
+
+            <h2 class="form-mainSentence">VSO à bien enregistré votre demande et là soumet immédiatement aux autorités compétentes.</h2>
+            <h2 class="form-subSentence">Vous serez contacté dans les plus brefs délais pour connaître le ressort de votre demande.</h2>
+
+          </div>
+
         </div>
-      </section>
+      </div>
     </div>
+    <a class="colonfelicitation-container-content-link" href="#">accueil</a>
+  </div>
+  </div>
+
+  <footer class="footer"></footer>
 </body>
+<script src="js/script.js"></script>
+<script src="js/burger.js"></script>
 
 </html>
