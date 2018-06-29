@@ -22,13 +22,13 @@
 }
 
 .catalogueplanete-container {
-  position: absolute;
-  overflow: hidden;
-  bottom: 0;
-  height: 50vh;
-  width: 100%;
-  background: white;
-  padding-bottom: 16px;
+  position:absolute;
+  overflow:hidden;
+  top:50vh;
+  min-height:50vh;
+  max-width:100%;
+  background:white;
+  padding-bottom:16px;
 }
 
 .catalogueplanete-container-title {
@@ -61,32 +61,15 @@
   margin-top: 8px;
 }
 
-.catalogueplanete-container-content-arrow {
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-@media (min-width: 576px) {
-  .catalogueplanete-container-content-arrow {
-    height: 40vh;
-  }
-}
 
 .catalogueplanete-container-content-text {
   display: flex;
-  height: 30vh;
   align-items: flex-start;
   position: relative;
   text-align: left;
 }
 
-@media (min-width: 576px) {
-  .catalogueplanete-container-content-text {
-    height: 40vh;
-  }
-}
 
 .catalogueplanete-container-content-text p {
   font-family: "Montserrat Regular";
@@ -110,10 +93,7 @@
 }
 
 .catalogueplanete-container-content-link {
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
+  transform: translateX(50%);
   display: inline-block;
   text-align: center;
   font-family: "Montserrat Light";
@@ -124,6 +104,8 @@
   border-radius: 8px;
   text-transform: uppercase;
   color: white;
+  margin-left: 50%;
+  transform: translateX(-50%)
 }
 
 @media (min-width: 576px) {
