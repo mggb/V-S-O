@@ -95,7 +95,7 @@
 <div class="catalogueplanete-container">
     <div class="row center-xs">
         <div class="col-xs-10 col-md-11 col-lg-11">
-            {% for planete in planetes %}
+
             <div class="row center-xs catalogueplanete-container-content">
                 <div class="col-xs-1 catalogueplanete-container-content-arrow">
                     <img src="{{ asset('bundles/build/img/fleche-gauche.png') }}" class="left" alt="previous">
@@ -104,38 +104,23 @@
                     <div class="catalogueplanete-container-content-text">
                         <div class="box-slider">
 
-                            <div class="catalogueplanete-container-content-text-item">
-                                <h1 class='catalogueplanete-container-title'>{{ planete.nom }}</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur voluptate rerum. Veniam facere odio asperiores officiis, nostrum ad beatae, esse eligendi earum odit dolor voluptates perspiciatis, praesentium incidunt. Quo.lorem</p>
-                                <a class="catalogueplanete-container-content-link" href="#">caracteristiques</a>
-                                <div class="le_test"></div>
-                            </div>
-                            <img src="{{ planete.image }}image/planetes/agetoton.png" class="catalogueplanete-bg" alt="">
-                            <!-- end article 1 -->
+                            {% for planete in planetes %}
 
                             <div class="catalogueplanete-container-content-text-item">
-                                <h1 class='catalogueplanete-container-title'>ceres</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur voluptate rerum. Veniam facere odio asperiores officiis, nostrum ad beatae, esse eligendi earum odit dolor voluptates perspiciatis, praesentium incidunt. Quo.lorem</p>
-                                <a class="catalogueplanete-container-content-link" href="#">caracteristiques</a>
-                            </div>
-                            <img src="{{ asset('bundles/build/img/mars.jpg') }}" class="catalogueplanete-bg" alt="">
-                            <!-- end article 2 -->
-
-
-                            <div class="catalogueplanete-container-content-text-item">
-                                <h1 class='catalogueplanete-container-title'>ceres</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur voluptate rerum. Veniam facere odio asperiores officiis, nostrum ad beatae, esse eligendi earum odit dolor voluptates perspiciatis, praesentium incidunt. Quo.lorem</p>
-                                <a class="catalogueplanete-container-content-link" href="#">caracteristiques</a>
+                                <h1 class='catalogueplanete-container-title'>{{ planete.nom ({id: planete.id}) }}</h1>
+                                <p>{{ planete.histoire }}</p>
+                                <a class="catalogueplanete-container-content-link" href="{{ path('post_planete', {id: planete.id}) }}">caracteristiques</a>
                             </div>
                             <img src="{{ asset('bundles/build/img/agetoton.png') }}" class="catalogueplanete-bg" alt="">
 
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-1 catalogueplanete-container-content-arrow">
                     <img src="{{ asset('bundles/build/img/fleche-droite.png') }}" class="right" alt="next">
                 </div>
-                {% endfor %}
+
             </div>
 
         </div>

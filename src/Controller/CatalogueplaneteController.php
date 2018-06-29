@@ -10,7 +10,6 @@ use App\Repository\PlaneteRepository;
 
 class CatalogueplaneteController extends Controller
 {
-
     /**
      * @Route("/catalogueplanete", name="catalogueplanete", methods="GET")
      */
