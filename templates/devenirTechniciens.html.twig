@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{  asset('bundles/build/css/reset.css') }}" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="{{  asset('bundles/build/css/font.css') }}" type="text/css">
     <link rel="stylesheet" href="{{  asset('bundles/build/css/header.css') }}" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href={{  asset('bundles/build/css/devenirTechniciens.css') }}" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="{{  asset('bundles/build/css/devenirTechniciens.css') }}" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="{{  asset('bundles/build/css/flexboxgrid.min.css') }}" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -26,7 +26,7 @@
             <ul class="desktopMenu">
                 <li>
                     <ul class="wrapper-desktopMenu">
-                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="#">Acceuil</a></li>
+                        <li class="menu-desktopItems"> <a class="menu-desktopLink" href="{{ path('Oui_accueil') }}">Acceuil</a></li>
                         <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Recherche avancée</a></li>
                         <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Catalogue</a></li>
                         <li class="menu-desktopItems"> <a class="menu-desktopLink" href="">Autre</a>
@@ -78,7 +78,7 @@
             </div>
             <div class="containerList">
                 <ul class="containerli">
-                    <li class="li-menu"> <a class="link-menu" href="#">Acceuil</a></li>
+                    <li class="li-menu"> <a class="link-menu" href="{{ path('Oui_accueil') }}">Acceuil</a></li>
                     <li class="li-menu"> <a class="link-menu" href="">Catalogue</a></li>
                     <li class="li-menu"> <a class="link-menu" href="">Devenir colons</a></li>
                     <li class="li-menu"> <a class="link-menu" href="">Devenir technicien</a></li>
@@ -115,7 +115,7 @@
         </div>
 
     </div>
-    <a class="catalogueplanete-container-content-link" href="#">accueil</a>
+    <a class="catalogueplanete-container-content-link" href="{{ path('Oui_accueil') }}">accueil</a>
 </div>
 
 <footer class="footer"></footer>

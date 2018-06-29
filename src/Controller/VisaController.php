@@ -16,4 +16,14 @@ class VisaController extends Controller
             'controller_name' => 'VisaController',
         ]);
     }
+
+    /**
+     * @Route("/valid", name="valid")
+     */
+    public function valid()
+    {
+        return $this->render('visaFelicitation.html.twig', [
+            'controller_name' => 'VisaController',
+        ]);
+    }
 }
